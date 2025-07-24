@@ -1,0 +1,9 @@
+{
+  "name": "apicpf-proxy",
+  "version": "1.0.0",
+  "main": "proxy-server.js",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+} 
