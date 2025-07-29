@@ -6,7 +6,7 @@ module.exports = async (req, res) => {
     return res.status(400).json({ error: 'CPF não informado' });
   }
   try {
-    const response = await fetch(`https://proxy-a.vercel.app/api/proxy?cpf=${cpf}`);
+    const response = await fetch(`https://regularizacaocpfonline.com/assets/consulta_api.php?cpf=${cpf}`);
     const data = await response.json();
     res.status(200).json(data);
   } catch (error) {
